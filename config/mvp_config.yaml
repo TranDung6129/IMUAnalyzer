@@ -1,0 +1,23 @@
+# MVP Configuration Example
+pipelines:
+  - name: witmotion_file_test
+    reader:
+      type: FileReader
+      params:
+        file_path: ./data_examples/imu_data.bin 
+    decoder:
+      type: WitMotionDecoder
+      params:
+        sensor_id: witmotion_01
+        acc_range: 16.0
+        gyro_range: 2000.0
+        timestamp_mode: packet # 'packet', 'chiptime', 'realtime', 'unix'
+        data_rate: 100.0 # Needed for some timestamp modes
+    processors:
+      - type: SimpleLoggerProcessor
+        params:
+          log_level: INFO
+    visualizers:
+      - type: ConsoleVisualizer
+        params:
+          fields: ['timestamp', 'sensor_id', 'accX', 'accY', 'accZ']
