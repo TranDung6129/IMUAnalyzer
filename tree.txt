@@ -1,0 +1,152 @@
+.
+├── config
+│   └── mvp_config.yaml
+├── data_examples
+├── docs
+├── README.md
+├── requirements.txt
+├── src
+│   ├── core
+│   │   ├── config_loader.py
+│   │   ├── engine.py
+│   │   ├── __init__.py
+│   │   ├── pipeline.py
+│   │   └── plugin_manager.py
+│   ├── data
+│   │   ├── __init__.py
+│   │   └── models.py
+│   ├── __init__.py
+│   ├── io
+│   │   ├── __init__.py
+│   │   ├── readers
+│   │   │   ├── base_reader.py
+│   │   │   ├── file_reader.py
+│   │   │   └── __init__.py
+│   │   └── writers
+│   │       └── __init__.py
+│   ├── main.py
+│   ├── plugins
+│   │   ├── decoders
+│   │   │   ├── base_decoder.py
+│   │   │   ├── __init__.py
+│   │   │   ├── witmotion_hwt905_decoder.py
+│   │   │   └── witmotion_hwt905_utils
+│   │   │       ├── accel_packet.py
+│   │   │       ├── angle_packet.py
+│   │   │       ├── gyro_packet.py
+│   │   │       ├── magnetic_packet.py
+│   │   │       ├── packet.py
+│   │   │       └── time_packet.py
+│   │   ├── __init__.py
+│   │   ├── processors
+│   │   │   ├── base_processor.py
+│   │   │   ├── __init__.py
+│   │   │   └── simple_logger_processor.py
+│   │   └── visualizers
+│   │       ├── base_visualizer.py
+│   │       ├── console_visualizer.py
+│   │       └── __init__.py
+│   ├── ui
+│   │   ├── config_panel.py
+│   │   ├── connection_panel.py
+│   │   ├── controls
+│   │   │   ├── __init__.py
+│   │   │   ├── pipeline_controls.py
+│   │   │   ├── plugin_config_widget.py
+│   │   │   └── recording_controls.py
+│   │   ├── __init__.py
+│   │   ├── main.py
+│   │   ├── main_window.py
+│   │   ├── utils
+│   │   │   ├── __init__.py
+│   │   │   ├── qt_helpers.py
+│   │   │   ├── resources.py
+│   │   │   └── themes.py
+│   │   └── visualizers
+│   │       ├── dashboard
+│   │       │   ├── dashboard_control_panel.py
+│   │       │   ├── dashboard_manager.py
+│   │       │   ├── draggable_visualizer_widget.py
+│   │       │   ├── grid_dashboard_panel.py
+│   │       │   └── __init__.py
+│   │       ├── dashboard.py
+│   │       ├── fft_plot.py
+│   │       ├── __init__.py
+│   │       ├── orientation_3d.py
+│   │       └── time_series_plot.py
+│   ├── ui_adapter
+│   │   ├── config_manager.py
+│   │   ├── data_bridge.py
+│   │   ├── engine_adapter.py
+│   │   └── __init__.py
+│   └── utils
+│       ├── __init__.py
+│       ├── serial_utils.py
+│       ├── timestamp_utils.py
+│       └── witmotion
+│           ├── accel_packet.py
+│           ├── angle_packet.py
+│           ├── gyro_packet.py
+│           ├── __init__.py
+│           ├── magnetic_packet.py
+│           ├── packet.py
+│           └── time_packet.py
+├── tests
+│   ├── core
+│   │   └── __init__.py
+│   ├── __init__.py
+│   ├── integration
+│   │   └── test_serial_integration.py
+│   ├── plugins
+│   │   └── __init__.py
+│   └── utils
+│       ├── __init__.py
+│       ├── test_serial_utils.py
+│       ├── test_timestamp.py
+│       └── test_utc_time.py
+├── tree.txt
+└── venv
+    ├── bin
+    │   ├── activate
+    │   ├── activate.csh
+    │   ├── activate.fish
+    │   ├── Activate.ps1
+    │   ├── f2py
+    │   ├── numpy-config
+    │   ├── pip
+    │   ├── pip3
+    │   ├── pip3.12
+    │   ├── pyserial-miniterm
+    │   ├── pyserial-ports
+    │   ├── python -> python3
+    │   ├── python3 -> /usr/bin/python3
+    │   └── python3.12 -> python3
+    ├── include
+    │   └── python3.12
+    ├── lib
+    │   └── python3.12
+    │       └── site-packages
+    │           ├── dateutil
+    │           ├── numpy
+    │           ├── numpy-2.2.4.dist-info
+    │           ├── numpy.libs
+    │           ├── pandas
+    │           ├── pandas-2.2.3.dist-info
+    │           ├── pip
+    │           ├── pip-24.0.dist-info
+    │           ├── pyserial-3.5.dist-info
+    │           ├── python_dateutil-2.9.0.post0.dist-info
+    │           ├── pytz
+    │           ├── pytz-2025.2.dist-info
+    │           ├── PyYAML-6.0.2.dist-info
+    │           ├── serial
+    │           ├── six-1.17.0.dist-info
+    │           ├── six.py
+    │           ├── tzdata
+    │           ├── tzdata-2025.2.dist-info
+    │           ├── _yaml
+    │           └── yaml
+    ├── lib64 -> lib
+    └── pyvenv.cfg
+
+55 directories, 95 files

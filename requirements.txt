@@ -1,0 +1,5 @@
+# Project Requirements
+PyYAML>=5.4
+numpy
+pandas
+pyserial
